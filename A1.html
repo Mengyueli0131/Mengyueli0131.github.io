@@ -1,0 +1,188 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+    <head>
+        <title>
+            Patient's experiences analysis
+        </title>
+        <style>
+            body{
+                background-color: lavenderblush;
+            }
+            header{
+                color: cadetblue;
+                font-style: oblique;
+                margin-left: 400px;
+                 
+            }
+             div{
+                margin-left: 160px;
+               
+             }
+ demographic,demoq {
+    display: block;
+    color:brown;
+    font-size: medium;
+    font-style: oblique;
+    width: 200px; 
+    margin-top: 5px;   
+     
+}
+legend{
+    color: black;
+    font-size: large;
+    font-style: normal;
+    background-color: blanchedalmond;
+}
+ medical,mediq{
+    display: block;
+    color: darkslategrey;
+     width: 750px;
+     margin-top: 5px;
+     font-style: unset;
+     font-weight: 300;
+     color: darkolivegreen;
+     margin-left: 50px;
+ }
+ img{
+    float: right;
+ }
+  submission,footer{
+display: block;
+margin-top: 5px;
+width: 400px;
+color: cornflowerblue;
+font-size: large;
+ 
+ }
+ submission{
+    margin-left: 50px;
+ }
+ demographic{
+    margin-left: 50px;
+ }
+ p{
+    margin-bottom:5px ;
+    margin-left: 200px;
+ } 
+     button{
+        margin-top: 15px; 
+        margin-left: 280px;
+        top: 50%;
+        background-color: darksalmon;
+        color: saddlebrown;
+        border: none;
+        border-radius: 10px;
+        box-shadow:0px 0px 2px 2px rgb(0,0,0)
+        
+     }
+     button:hover{
+        background-color: bisque;
+        transition: 0.7s;
+     }
+        </style>
+        <meta charset="utf-8" />
+    </head>
+    <body>
+        <header> <img src="data:image/jpeg;base64,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">
+            <h1>Form for Patient's current activities</h1>
+            <div><p>(Only for internal use)</p></div>
+           
+        </header>
+        <form class="Analysis" action="mail to:jgardner@uvic.ca" method="post"id="Form"> 
+       
+        <demographic>
+        <fieldset>
+            <legend>
+Personal imformation
+        </legend>
+         <demoq>
+            Patient's registered name:
+         </demoq>
+        <input type="text" name="Name" id="Name" value="">
+        <demoq><lable for="Age">Patient's age:</lable></demoq>
+        <input type="number" name=" Age" id=" Age" value="">
+        <demoq><lable for="Allergy"> Allergic history:</lable></demoq>
+        <input type="text" name="Allergy" id="Allergy" value="">
+        <demoq><lable for="Birth">Date of birth:</lable></demoq>
+        <input type="Date" name="q9Follow2" id="q9f2" value style=" ">
+        <demoq><lable for="phone number">Phone number:</lable></demoq>
+        <input type="number" name="phone number" id="phone number" value="">
+        
+    </fieldset>
+</demographic>
+<medical>
+    <fieldset>
+        <legend>
+            QUESTIONNAIRE FOR PERSONAL TREATMENT
+        </legend>
+       <mediq> <span>
+           1. Have you ever done an operation?
+        </span>
+        <input type="radio" id="q1y" name="pastIllness" value="YES"><label for="q1y">YES</label>
+					<input type="radio" id="q1n" name="pastIllness" value="NO"><label for="q1n">NO</label>
+					<input type="radio" id="q1u" name="pastIllness" value="UNKNOWN"><label for="q1u">UNKNOWN</label>	
+</mediq> 
+<mediq> 
+    <span>
+     2.Do you have insurance for medical treatment?
+</span>
+<input type="radio" id="q2y" name="pastIllness" value="YES"><label for="q2y">YES</label>
+            <input type="radio" id="q2n" name="pastIllness" value="NO"><label for="q2n">NO</label>
+            <input type="radio" id="q2u" name="pastIllness" value="UNKNOWN"><label for="q2u">UNKNOWN</label>	
+</mediq> 
+<mediq> <span>
+     3.Have you ever got treatment in our hospital?
+</span>
+<input type="radio" id="q3y" name="pastIllness" value="YES"><label for="q3y">Yes,I have been here several times</label>
+            <input type="radio" id="q3n" name="pastIllness" value="NO"><label for="q3n">No,this is the first time</label>
+             
+</mediq> 
+<mediq> <span>
+    4. Whether to take supplements for a long time?
+</span>
+<input type="radio" id="q4y" name="pastIllness" value="YES"><label for="q4y">YES</label>
+            <input type="radio" id="q4n" name="pastIllness" value="NO"><label for="q4n">NO</label>
+             
+            <span class="followup"><label for="q4f"><br>(How long,and what type of supplements?)  </label>
+                <input type="text" name="q4Follow" id="q4f" value=""> </span>
+        </mediq> 
+        <mediq> 
+            <span>
+             5. Do you allergic to penicillin?
+        </span>
+        <input type="radio" id="q5y" name="pastIllness" value="YES"><label for="q5y">YES</label>
+                    <input type="radio" id="q5n" name="pastIllness" value="NO"><label for="q5n">NO</label>
+                    <input type="radio" id="q5u" name="pastIllness" value="UNKNOWN"><label for="q5u">UNKNOWN</label>	
+        </mediq>      
+    </fieldset>
+</medical>
+<submission>
+    <fieldset>
+        <legend>
+            Sign-off for submisssion
+        </legend>
+        <footer>
+             <lable for="full name">Full name(For comfirming imformation)</lable> 
+                    </footer>
+                    <input type="text" name="full name" id="full name" value="">
+                    <footer>
+                        <lable for="doctor">Choose doctor:</lable> 
+                               </footer>
+                               <select name="Doctor">
+                                <option id value="Anne">Anne</option>
+                                <option id value="John">John</option>
+                                <option id value="Peter">Peter</option>
+                               </select> 
+                               <footer><lable for="Date">Date:</lable></footer>
+                               <input type="Date" name="q9Follow2" id="q9f2" value style=" ">   
+    </fieldset>
+</submission>
+<p><a href="uvic.html" target="uvic" title="">Click for more details</a></p>
+<button>Submit</button>
+<script type="text/javascript">
+    document.getElementById("Form").addEventListener("submit", function(){
+      alert("Your form has been submitted");
+    });
+    </script>
+    </body>
+</html>
